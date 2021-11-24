@@ -23,10 +23,7 @@ const ProductCategory = props => {
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
-        // autoplay: true,
-        // speed: 2000,
-        // autoplaySpeed: 2000,
-        // cssEase: "linear",
+    
 
         responsive: [
             {
@@ -75,7 +72,7 @@ const ProductCategory = props => {
 
                         return (
                             <React.Fragment>
-                                <Link to={`/b/${category}`}>
+                                <Link to={`/category/${category}`}>
                                     <Col>
                                         <Card className="shadow-none" >
                                             <img

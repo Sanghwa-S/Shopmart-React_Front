@@ -7,7 +7,6 @@ import { AddShoppingCart } from '@material-ui/icons';
 
 import useStyles from '../assets/css/ProductStyles'
 
-////////////////////fix ahref
 
 const ProductListByCatItem = props => {
     const classes = useStyles();
@@ -15,8 +14,6 @@ const ProductListByCatItem = props => {
 
 
         <div>
-            {/* {props.product.name}
-            {props.product.category} */}
             <a href={`/product/details/${props.product._id}`}>
 
 
@@ -39,11 +36,7 @@ const ProductListByCatItem = props => {
                         </div>
                         <Typography dangerouslySetInnerHTML={{ __html: props.product.description }} variant="body2" color="textSecondary" component="p" />
                     </CardContent>
-                    {/* <CardActions disableSpacing className={classes.cardActions}>
-    <IconButton aria-label="Add to Cart" onClick={handleAddToCart}>
-        <AddShoppingCart />
-    </IconButton>
-</CardActions> */}
+                    
                 </Card>
             </a>
         </div>

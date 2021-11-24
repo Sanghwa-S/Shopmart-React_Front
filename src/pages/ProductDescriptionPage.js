@@ -12,19 +12,6 @@ import { MDBCard, MDBCardTitle, MDBCardText, MDBCardBody, MDBCardImage, MDBRow, 
 import Header from '../components/Header'
 
 
-
-// function GetId() {
-
-//     const { id } = useParams();
-//     console.log(id);
-
-//     return (
-//         <div>
-//             {id}
-//         </div>
-//     );
-// }
-
 const ProductDescriptionPage = () => {
 
 
@@ -77,12 +64,12 @@ const ProductDescriptionPage = () => {
                     <MDBCol md='6'>
                         <MDBCardBody>
                             <MDBCardTitle> {product.name}</MDBCardTitle>
+                            <MDBCardText> {product.description} </MDBCardText>
                             <MDBCardText>
-                                This is a wider card with supporting text below as a natural lead-in to additional content. This
-                                content is a little bit longer.
-            </MDBCardText>
+                                <small className='text-muted'>This is {product.isBestSeller ? "Best Seller" : "not best seller" } </small>
+                            </MDBCardText>
                             <MDBCardText>
-                                <small className='text-muted'>Last updated 3 mins ago</small>
+                                <small className='text-muted'>This is {product.isFeatured ? "featured product" : "not featured product" } </small>
                             </MDBCardText>
                             <MDBCardText>{product.category}  </MDBCardText>
 
@@ -91,12 +78,6 @@ const ProductDescriptionPage = () => {
                 </MDBRow>
             </MDBCard>
         </>
-
-        //                     {product.name}
-        //                     {product.price}
-        //                     {product.description}
-        //                     {product.category}
-        //                     <img src={product.photoURL} alt="" />
 
     )
 }

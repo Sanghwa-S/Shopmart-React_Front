@@ -10,9 +10,7 @@ import RegistrationPage from "../pages/RegistrationPage";
 import ProductListingPage from "../pages/ProductListingPage";
 import ProductDescriptionPage from "../pages/ProductDescriptionPage";
 import ProductCategoryPage from "../pages/ProductCategoryPage"
-//css???
 
-//asynch
 
 const App = () => {
 
@@ -38,7 +36,7 @@ const App = () => {
         </Route>
 
 
-        <Route exact path="/b/:category">
+        <Route exact path="/category/:category">
           <ProductCategoryPage />
         </Route>
 

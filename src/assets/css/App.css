@@ -33,6 +33,7 @@
   #main-container
 {
     min-height: 100vh;
+    background-color: black;
 }
 
 h1,h2,h3,p
@@ -288,3 +289,5 @@ footer p
 .container {
     padding: 2px 16px;
 }
+
+
