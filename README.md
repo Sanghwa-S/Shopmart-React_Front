@@ -4,11 +4,11 @@
 2. Open terminal
 3. Clone this repo by running your git clone project URL .
 4. Reinstall all your dependencies by running the following command npm i
-5. Start React project by running npm start
+5. Start React project by running **npm start**
 6. Create a file called _redirects within the public folder.
 7. Inside the _redirects file, add the following code : / /index.html 200*
 8. Create a .env file within root of the project.
-10. Create an environment variable (wiithin the .env file) called REACT_APP_BACK_END_API_DOMAIN. Assign the value http://localhost:5000
+10. Create an environment variable (wiithin the .env file) called **REACT_APP_BACK_END_API_DOMAIN**. Assign the value **http://localhost:5000**
 
 # Getting Started with Create React App
 
